@@ -1,0 +1,177 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    font-size: 18px
+    font-family: 'Bai Jamjuree', sans-serif
+.wrapper
+    +siteWidth(90%)
+.mainHeader
+    +flexProperty(center, row, stretch)
+    background-image: url(../images/bg-header-mobile.png)
+    background-size: cover
+    background-repeat: no-repeat
+   
+.mainHeader__logoImageContainer
+    width: 40%
+    padding-top: 50px
+    .mainHeader__image
+        width: $imageWidth
+.generalContent__headText
+        margin-bottom: $paragraphRange
+        +textFormat(center, black, 1.7em, bold, normal)
+.generalContent__paragraph
+        +textFormat(center, gray, 1rem, bold, normal)
+.generalContent__historyOf
+    margin-top: $titleRange
+.generalContent__btnContainer
+    margin-top: $buttonsRange
+    +flexProperty(space-around, column, center)
+    button
+        +buttonFormat(transparent, 20px, white, none, 10px, 10px, 30px, 13px)
+        cursor: pointer
+    .generalContent__greenButton
+        background-color: hsl(171, 66%, 44%)
+    .generalContent__blueButton
+        background-color: hsl(233, 100%, 69%)
+.generalContent__textBox
+    margin-top: $sectionRange
+    .generalContent__flexInbox2
+        margin-top: $buttonsRange
+        +flexProperty(space-between, column, center)
+    .generalContent__flexInbox3
+        margin-top: $buttonsRange
+        +flexProperty(space-between, column, center)
+.generalContent__insideFlex2
+    margin: $buttonsRange 0
+    .generalContent__textContainer2
+        +flexProperty(space-between, column, center)
+        .generalContent__iconContainer
+            +flexProperty(center, row, center)
+            margin: $buttonsRange 0
+            width: 20%
+            height: 40px
+            .generalContent__icon
+                width: $imageWidth
+.generalContent__textContainer
+    margin: $buttonsRange 0
+.generalContent__headParagraph
+    +textFormat(center, black, 20px, bold, normal)
+.generalContent__contentParagraph
+    +textFormat(center, gray, 16px, normal, normal)
+    margin-top: $paragraphRange
+.generalContent__imgContainer
+    width: $largeImageContainerWidth
+    .generalContent__image
+        width: $imageWidth
+.generalContent__firmLogos
+    margin: $sectionRange 0
+    +flexProperty(center, column, center)
+    .generalContent__logoContainer
+        width: 30%
+        margin-bottom: 50px
+        .generalContent__image
+            width: $imageWidth
+.lastSection
+    margin-top: $sectionRange
+    +areaFormat(#f9f0e5, gray)
+    +flexProperty(space-around, column, center)
+    .lastSection__footerLogoContainer
+        width: 30%
+        margin-top: $titleRange
+        .lastSection__image
+            width: $imageWidth
+    .lastSection__footerAnchorContainer
+        margin: $titleRange 0
+        +flexProperty(space-between, column, center)
+        .lastSection__anchorFooter
+            margin-bottom: $buttonsRange
+    .lastSection__footerIconsContainer
+        +flexProperty(space-between, row, center)
+        width: 50%
+        margin-bottom: $sectionRange
+        .lastSection__footerIcon
+            width: 20%
+            .lastSection__image
+                width: $imageWidth
+
+@media screen and ( min-width: 1024px )
+    .mainHeader
+        background-image: url(../images/bg-header-desktop.png)
+    .mainHeader__logoImageContainer
+        width: 10%
+        padding-top: 100px
+    .wrapper
+        +siteWidth(70%)
+    .generalContent__contentParagraph
+        +textFormat(center, gray, 20px, normal, normal)
+    .generalContent__headParagraph
+        +textFormat(center, black, 24px, bold, normal)
+    .generalContent__paragraph
+        +textFormat(center, gray, 1.3rem, bold, normal)
+    .generalContent__textBox
+        .generalContent__flexInbox2
+            +flexProperty(space-between, row, center)
+            .generalContent__imgContainer
+                margin-left: -20%
+            .generalContent__insideFlex
+                margin-left: 10%
+                .generalContent__textContainer
+                    p
+                        text-align: left
+    .generalContent__insideFlex2
+        +flexProperty(space-between, row, center)
+    .generalContent__firmLogos
+        +flexProperty(space-between, row, center)
+        .generalContent__logoContainer
+            width: 15%
+    .generalContent__btnContainer
+        +flexProperty(space-evenly, row, center)
+        button
+            +buttonFormat(transparent, 20px, white, none, 10px, 10px, 30px, 18px)
+
+    .lastSection
+        +flexProperty(space-around, row, center)
+        padding: 50px 0
+        .lastSection__footerLogoContainer
+            width: 5%
+            margin-top: 0
+            .lastSection__image
+                width: $imageWidth
+        .lastSection__footerAnchorContainer
+            margin: 0
+            +flexProperty(flex-start, row, center)
+            flex-wrap: wrap
+            .lastSection__anchorFooter
+                margin-bottom: 0
+                margin-left: calc((100% - (30%*3)) / 3)
+                width: 30%
+                line-height: 30px
+                font-size: 20px
+        .lastSection__footerIconsContainer
+            +flexProperty(space-between, row, center)
+            width: 20%
+            margin-bottom: 0
+            .lastSection__footerIcon
+                width: 15%
+
+@media ( min-width: 1824px )
+    .lastSection
+        .lastSection__footerIconsContainer
+            .lastSection__footerIcon
+                width: 10%
+    .generalContent__textBox
+        margin-top: 100px
+    .generalContent__flexInbox
+        margin-bottom: $titleRange
+    
+    
+    
+                
+
+
+
+    
+
+
